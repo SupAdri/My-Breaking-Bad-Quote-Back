@@ -3,8 +3,8 @@ const cors = require('cors');
 const app = express();
 
 //config
-app.use(cors('*'));
 app.use(express.json())
+app.use(cors());
 
 //data
 var User = [{
