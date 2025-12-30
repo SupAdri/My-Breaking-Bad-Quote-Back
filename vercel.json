@@ -6,12 +6,6 @@
             "use": "@vercel/node"
         }
     ],
-    "rewrites": [
-        {
-            "source": "/api/:path*",
-            "destination": "/app.index.js"
-        }
-    ],
     "headers": [
         {
             "source": "/(.*)",
