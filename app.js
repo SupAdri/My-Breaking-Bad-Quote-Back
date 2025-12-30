@@ -23,9 +23,6 @@ var User = [{
 
 //para enviar el feed de quotes
 app.get('/api/feed', (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
     res.send(getFeed());
 });
 
@@ -240,6 +237,6 @@ app.get('/api/user/todes', (req, res) => {
     res.send(User)
 });
 
-app.listen(3000, () => {
-    console.log('Servidor corriendo en http://localhost:3000');
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Servidor corriendo en http://localhost:' + (process.env.PORT || 3000));
 });
