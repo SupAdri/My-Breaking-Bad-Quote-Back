@@ -7,17 +7,63 @@ app.use(express.json())
 app.use(cors());
 
 //data
-var User = [{
-    token: '69',
-    name: 'Admin',
-    isAdmin: true,
-    username: '@Admin',
-    password: 'Admin123',
-    quote: {
-        quote: 'La limonada es la base de todo',
-        author: 'Diascamelini Singarini'
+var User = [
+    {
+        "token": "69",
+        "name": "Admin",
+        "isAdmin": true,
+        "username": "@Admin",
+        "password": "Admin123",
+        "quote": {
+            "quote": "La limonada es la base de todo",
+            "author": "Diascamelini Singarini"
+        }
+    },
+    {
+        "name": "Adrián Hernández",
+        "username": "hcrespo",
+        "password": "qqqqqqqq",
+        "isAdmin": true,
+        "quote": {
+            "quote": "We tried to poison you. We tried to poison you because you are an insane, degenerate piece of filth and you deserve to die.",
+            "author": "Walter White"
+        },
+        "token": "0.8000220200236516"
+    },
+    {
+        "name": "Huevo duro",
+        "username": "elhuevo",
+        "password": "qqqqqqqq",
+        "isAdmin": false,
+        "quote": {
+            "quote": "Fifty years I spent like that. Finding myself awake at three in the morning. But you know what? Ever since my diagnosis, I sleep just fine.",
+            "author": "Walter White"
+        },
+        "token": "0.3878030576204553"
+    },
+    {
+        "name": "Rosa Melano",
+        "username": "rosita",
+        "password": "qqqqqqqq",
+        "isAdmin": false,
+        "quote": {
+            "quote": "You can never trust a drug addict.",
+            "author": "Gustavo Fring"
+        },
+        "token": "0.6455704024074035"
+    },
+    {
+        "name": "Armando Casas",
+        "username": "gaytu",
+        "password": "qqqqqqqq",
+        "isAdmin": false,
+        "quote": {
+            "quote": "Tight. Tight. Tight.",
+            "author": "Tuco Salamanca"
+        },
+        "token": "0.1376123303670721"
     }
-}]
+]
 
 //rutas
 
